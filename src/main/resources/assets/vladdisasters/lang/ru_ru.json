@@ -1,0 +1,23 @@
+{
+  "itemGroup.vladdisasters": "Случайные Бедствия",
+  "item.vladdisasters.kolbasa": "Кусок колбасы",
+  "item.vladdisasters.disaster_identifier": "Идентификатор бедствий",
+  "item.vladdisasters.mama_vlad_spawn_egg": "Яйцо призыва Мамы Влада",
+  "entity.vladdisasters.mama_vlad": "Мама Влада",
+  "entity.vladdisasters.meteor": "Метеор",
+  "entity.vladdisasters.black_hole": "Чёрная дыра",
+  "block.vladdisasters.tsunami_water": "Вода цунами",
+  "subtitles.vladdisasters.mama_scream": "Мама Влада истошно вопит",
+  "subtitles.vladdisasters.mama_roar": "Мама Влада рычит",
+  "subtitles.vladdisasters.mama_eat": "Мама Влада чавкает",
+  "subtitles.vladdisasters.mama_hurt": "Мама Влада ранена",
+  "subtitles.vladdisasters.mama_death": "Мама Влада повержена",
+  "subtitles.vladdisasters.screamer": "!!!",
+  "subtitles.vladdisasters.siren": "Воет сирена",
+  "subtitles.vladdisasters.alarm": "Тревога",
+  "subtitles.vladdisasters.nuke_boom": "Ядерный взрыв",
+  "subtitles.vladdisasters.quake_rumble": "Гул землетрясения",
+  "subtitles.vladdisasters.tornado_wind": "Вой торнадо",
+  "subtitles.vladdisasters.blackhole_hum": "Гул чёрной дыры",
+  "subtitles.vladdisasters.meteor_whoosh": "Свист метеора"
+}

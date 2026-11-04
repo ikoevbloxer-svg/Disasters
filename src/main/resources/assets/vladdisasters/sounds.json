@@ -1,0 +1,106 @@
+{
+  "mama_scream": {
+    "sounds": [
+      {
+        "name": "vladdisasters:mama_scream"
+      }
+    ],
+    "subtitle": "subtitles.vladdisasters.mama_scream"
+  },
+  "mama_roar": {
+    "sounds": [
+      {
+        "name": "vladdisasters:mama_roar"
+      }
+    ],
+    "subtitle": "subtitles.vladdisasters.mama_roar"
+  },
+  "mama_eat": {
+    "sounds": [
+      {
+        "name": "vladdisasters:mama_eat"
+      }
+    ],
+    "subtitle": "subtitles.vladdisasters.mama_eat"
+  },
+  "mama_hurt": {
+    "sounds": [
+      {
+        "name": "vladdisasters:mama_hurt"
+      }
+    ],
+    "subtitle": "subtitles.vladdisasters.mama_hurt"
+  },
+  "mama_death": {
+    "sounds": [
+      {
+        "name": "vladdisasters:mama_death"
+      }
+    ],
+    "subtitle": "subtitles.vladdisasters.mama_death"
+  },
+  "screamer": {
+    "sounds": [
+      {
+        "name": "vladdisasters:screamer"
+      }
+    ],
+    "subtitle": "subtitles.vladdisasters.screamer"
+  },
+  "siren": {
+    "sounds": [
+      {
+        "name": "vladdisasters:siren"
+      }
+    ],
+    "subtitle": "subtitles.vladdisasters.siren"
+  },
+  "alarm": {
+    "sounds": [
+      {
+        "name": "vladdisasters:alarm"
+      }
+    ],
+    "subtitle": "subtitles.vladdisasters.alarm"
+  },
+  "nuke_boom": {
+    "sounds": [
+      {
+        "name": "vladdisasters:nuke_boom"
+      }
+    ],
+    "subtitle": "subtitles.vladdisasters.nuke_boom"
+  },
+  "quake_rumble": {
+    "sounds": [
+      {
+        "name": "vladdisasters:quake_rumble"
+      }
+    ],
+    "subtitle": "subtitles.vladdisasters.quake_rumble"
+  },
+  "tornado_wind": {
+    "sounds": [
+      {
+        "name": "vladdisasters:tornado_wind"
+      }
+    ],
+    "subtitle": "subtitles.vladdisasters.tornado_wind"
+  },
+  "blackhole_hum": {
+    "sounds": [
+      {
+        "name": "vladdisasters:blackhole_hum"
+      }
+    ],
+    "subtitle": "subtitles.vladdisasters.blackhole_hum"
+  },
+  "meteor_whoosh": {
+    "sounds": [
+      {
+        "name": "vladdisasters:meteor_whoosh"
+      }
+    ],
+    "subtitle": "subtitles.vladdisasters.meteor_whoosh"
+  }
+}

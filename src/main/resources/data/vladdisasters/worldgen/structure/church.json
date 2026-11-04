@@ -1,0 +1,8 @@
+{
+  "type": "vladdisasters:building",
+  "biomes": "#vladdisasters:has_structure/church",
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "none",
+  "building": "church"
+}

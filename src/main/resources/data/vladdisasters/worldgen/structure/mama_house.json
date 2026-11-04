@@ -1,0 +1,8 @@
+{
+  "type": "vladdisasters:building",
+  "biomes": "#vladdisasters:has_structure/mama_house",
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "none",
+  "building": "mama_house"
+}

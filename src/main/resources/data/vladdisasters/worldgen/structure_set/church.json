@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "vladdisasters:church",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 36,
+    "separation": 14,
+    "salt": 777012345
+  }
+}

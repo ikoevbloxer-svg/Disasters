@@ -1,0 +1,23 @@
+{
+  "itemGroup.vladdisasters": "Random Disasters",
+  "item.vladdisasters.kolbasa": "Piece of Kolbasa",
+  "item.vladdisasters.disaster_identifier": "Disaster Identifier",
+  "item.vladdisasters.mama_vlad_spawn_egg": "Vlad's Mom Spawn Egg",
+  "entity.vladdisasters.mama_vlad": "Vlad's Mom",
+  "entity.vladdisasters.meteor": "Meteor",
+  "entity.vladdisasters.black_hole": "Black Hole",
+  "block.vladdisasters.tsunami_water": "Tsunami Water",
+  "subtitles.vladdisasters.mama_scream": "Vlad's Mom screams",
+  "subtitles.vladdisasters.mama_roar": "Vlad's Mom roars",
+  "subtitles.vladdisasters.mama_eat": "Vlad's Mom munches",
+  "subtitles.vladdisasters.mama_hurt": "Vlad's Mom hurts",
+  "subtitles.vladdisasters.mama_death": "Vlad's Mom dies",
+  "subtitles.vladdisasters.screamer": "!!!",
+  "subtitles.vladdisasters.siren": "Siren wails",
+  "subtitles.vladdisasters.alarm": "Alarm",
+  "subtitles.vladdisasters.nuke_boom": "Nuclear blast",
+  "subtitles.vladdisasters.quake_rumble": "Earthquake rumbles",
+  "subtitles.vladdisasters.tornado_wind": "Tornado howls",
+  "subtitles.vladdisasters.blackhole_hum": "Black hole hums",
+  "subtitles.vladdisasters.meteor_whoosh": "Meteor whooshes"
+}
