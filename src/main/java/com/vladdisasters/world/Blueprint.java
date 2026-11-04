@@ -2,6 +2,10 @@ package com.vladdisasters.world;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.ListTag;
+import net.minecraft.nbt.StringTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.*;
@@ -106,11 +110,29 @@ public class Blueprint {
         if (!inside(p)) return;
         level.setBlock(p, Blocks.DARK_OAK_WALL_SIGN.defaultBlockState().setValue(WallSignBlock.FACING, facing), 2);
         BlockEntity be = level.getBlockEntity(p);
-        if (be instanceof SignBlockEntity sign) {
+        if (!(be instanceof SignBlockEntity sign)) return;
+        if (sign.getLevel() != null) {
+            // Обычный загруженный мир (бункер)
             SignText text = new SignText();
             for (int i = 0; i < Math.min(4, lines.length); i++) text = text.setMessage(i, Component.literal(lines[i]));
             sign.setText(text, true);
+            return;
         }
+        // Генерация мира: у таблички ещё нет мира, setText() упал бы с NullPointerException.
+        // Поэтому записываем текст через NBT — так делает сама игра при загрузке чанка.
+        HolderLookup.Provider reg = level.registryAccess();
+        ListTag messages = new ListTag();
+        for (int i = 0; i < 4; i++) {
+            String line = i < lines.length ? lines[i] : "";
+            messages.add(StringTag.valueOf(Component.Serializer.toJson(Component.literal(line), reg)));
+        }
+        CompoundTag front = new CompoundTag();
+        front.put("messages", messages);
+        front.putString("color", "black");
+        front.putBoolean("has_glowing_text", false);
+        CompoundTag tag = sign.saveWithoutMetadata(reg);
+        tag.put("front_text", front);
+        sign.loadWithComponents(tag, reg);
     }
 
     public void ladder(int x, int y, int z, Direction facing) {

@@ -70,9 +70,14 @@ public class BuildingPiece extends StructurePiece {
     @Override
     public void postProcess(WorldGenLevel level, StructureManager sm, ChunkGenerator gen, RandomSource random,
                             BoundingBox box, ChunkPos chunkPos, BlockPos pivot) {
-        Blueprint b = new Blueprint(level, origin, box);
-        if (CHURCH.equals(kind)) buildChurch(b, level, box, random);
-        else buildHouse(b, level, box, random);
+        try {
+            Blueprint b = new Blueprint(level, origin, box);
+            if (CHURCH.equals(kind)) buildChurch(b, level, box, random);
+            else buildHouse(b, level, box, random);
+        } catch (Exception e) {
+            // Ошибка в постройке не должна выкидывать игрока из мира
+            VladDisasters.LOGGER.error("Ошибка генерации постройки {} в {}", kind, origin, e);
+        }
     }
 
     // =====================================================================

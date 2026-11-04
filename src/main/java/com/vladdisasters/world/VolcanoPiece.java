@@ -86,6 +86,14 @@ public class VolcanoPiece extends StructurePiece {
     @Override
     public void postProcess(WorldGenLevel level, StructureManager sm, ChunkGenerator gen, RandomSource random,
                             BoundingBox box, ChunkPos chunkPos, BlockPos pivot) {
+        try {
+            build(level, box);
+        } catch (Exception e) {
+            com.vladdisasters.VladDisasters.LOGGER.error("Ошибка генерации вулкана в {} {} {}", cx, cy, cz, e);
+        }
+    }
+
+    private void build(WorldGenLevel level, BoundingBox box) {
         int craterR = Math.max(9, radius / 6);
         int peak = cy + height;
         int craterFloor = peak - 16;
